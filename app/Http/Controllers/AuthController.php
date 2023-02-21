@@ -13,8 +13,6 @@ class AuthController extends Controller
     //
     public function Login(Request $request)
     {
-        # code...
-// dd('im here');
         $data = $request->all();
 
         $validator = Validator::make($data,[
@@ -22,15 +20,13 @@ class AuthController extends Controller
             'password'=>'required'
         ]);
         if ($validator->fails()) {
-            # code...
-            // dd($validator->errors());
+
             return redirect()->back()->withErrors('Invalid Inputs');
         }
 
         $user = User::where('email',$data['email'])->first();
 
         if(!$user){
-            // dd('not user');
             return redirect()->back()->withErrors('Incorrect Email');
         }
         $credentials = $request->only('email','password');
@@ -49,7 +45,6 @@ class AuthController extends Controller
         
         Auth::logout();
         return redirect()->route('login');
-        # code...
     }
 
 }

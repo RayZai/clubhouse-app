@@ -17,6 +17,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware(['auth'])->group(function(){
+    Route::get('/', function (Request $request) {
+        return redirect(route('index'));
+    });
     Route::get('/home', function (Request $request) {
         $ctrl = new MemberController();
         return $ctrl->index($request);

@@ -23,6 +23,15 @@ Add Member
         <h3>Add New Member</h3>
     </div>
     <div class='card-body'>
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <strong>
+                    @foreach ($errors->all() as $error)
+                        {{ $error }}
+                    @endforeach
+                </strong>
+            </div>
+            @endif
         <form action="/add" method="post">
             @csrf
             <div class="row my-2">
