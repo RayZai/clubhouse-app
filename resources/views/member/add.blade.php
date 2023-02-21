@@ -19,7 +19,7 @@ Add Member
 @section('body')
 @include('components.header')
 <div class="card m-3">
-    <div class="card title p-2">
+    <div class="card-title p-2">
         <h3>Add New Member</h3>
     </div>
     <div class='card-body'>
