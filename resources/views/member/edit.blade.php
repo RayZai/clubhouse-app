@@ -41,15 +41,15 @@ Edit Member
                     
                 </div>
                 <div class="col-6">
-                    <label for="txtName" class="form-label required">Email <span class="text text-danger">*</span></label>
-                    <input type="text" class="form-control" id="txtName" name="email" value="{{ $member->email }}"  required>
+                    <label for="txtEmail" class="form-label required">Email <span class="text text-danger">*</span></label>
+                    <input type="text" class="form-control" id="txtEmail" name="email" value="{{ $member->email }}"  required>
                     
                 </div>
             </div>
             <div class="row my-2">
                 <div class="col-6">
-                    <label for="txtName" class="form-label required">Phone Number <span class="text text-danger">*</span></label>
-                    <input type="text" class="form-control" id="txtName" name="phoneNumber" value="{{ $member->phoneNumber }}"  required>
+                    <label for="txtPhoneNumber" class="form-label required">Phone Number <span class="text text-danger">*</span></label>
+                    <input type="text" class="form-control" id="txtPhoneNumber" name="phoneNumber" value="{{ $member->phoneNumber }}"  required>
                     
                 </div>
             </div>

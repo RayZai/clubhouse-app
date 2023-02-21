@@ -16,7 +16,7 @@
 
     <div class='card m-3 p-4'>
 
-        <table  class = 'display nowrap' id='memberTable'>
+        <table  class='display nowrap' id='memberTable'>
             <thead>
                 <tr>
                     <th>Name</th>
@@ -51,8 +51,8 @@
 
                     <td>
                         
-                        <a href="{{ $row->id }}/edit" class="btn btn-primary col-6">Edit</a>
-                        <a class="btn {{ $row->active? "btn-danger":"btn-success" }} col-6" href="{{ $row->id }}/deactivate"
+                        <a href="{{ $row->id }}/edit" class="btn btn-primary col-4">Edit</a>
+                        <a class="btn {{ $row->active? "btn-danger":"btn-success" }} col-8" href="{{ $row->id }}/deactivate"
                         onclick="event.preventDefault();
                                         document.getElementById('deactivate-form-{{ $row->id }}').submit();">
                             {{ $row->active? "Deactivate":"Activate" }}
@@ -66,16 +66,14 @@
                 @endforeach
             </tbody>
         </table>
-        
     </div>
 
 @endsection
 
 @section('js')
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.css">
-  
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.js"></script>
 
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.js"></script>
 <script type="text/javascript">
 
         $(document).ready( function () {

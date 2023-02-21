@@ -41,15 +41,15 @@ Add Member
                     
                 </div>
                 <div class="col-6">
-                    <label for="txtName" class="form-label required">Email <span class="text text-danger">*</span></label>
-                    <input type="text" class="form-control" id="txtName" name="email" value="{{ old('email') }}" required>
+                    <label for="txtEmail" class="form-label required">Email <span class="text text-danger">*</span></label>
+                    <input type="text" class="form-control" id="txtEmail" name="email" value="{{ old('email') }}" required>
                     
                 </div>
             </div>
             <div class="row my-2">
                 <div class="col-6">
-                    <label for="txtName" class="form-label required">Phone Number <span class="text text-danger">*</span></label>
-                    <input type="text" class="form-control" id="txtName" name="phoneNumber" value="{{ old('phoneNumber') }}" required>
+                    <label for="txtPhoneNum" class="form-label required">Phone Number <span class="text text-danger">*</span></label>
+                    <input type="text" class="form-control" id="txtPhoneNum" name="phoneNumber" value="{{ old('phoneNumber') }}" required>
                     
                 </div>
             </div>
